@@ -2,11 +2,11 @@ pipeline{
     agent{
         label "master"
     }
+    options {
+        checkoutToSubdirectory('Omkar')
+    }
     stages{
         stage("A"){
-            options {
-                checkoutToSubdirectory('Omkar')
-            }
             steps{
                 echo "Current working directory"
                 sh 'pwd'
