@@ -5,12 +5,12 @@ pipeline{
     stages{
         stage("Build-Master"){
             steps{
-                echo "========executing A========"
+                echo "master branch"
             }
         }
         stage("Build-Dev"){
             steps{
-                echo "========executing A========"
+                echo "dev branch"
             }
         }
     }
